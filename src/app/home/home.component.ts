@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { HousingLocationComponent } from '../housing-location/housing-location.component';
-
+import { Housinglocation } from '../housinglocation';
 @Component({
   selector: 'app-home',
   imports: [HousingLocationComponent],
@@ -17,4 +17,14 @@ import { HousingLocationComponent } from '../housing-location/housing-location.c
   `,
   styleUrl: './home.component.css',
 })
-export class HomeComponent {}
+export class HomeComponent {
+  housingLocation: Housinglocation = {
+    id: 9999,
+    name: 'Test Home',
+    city: 'Test city',
+    state: 'ST',
+    availableUnits: 99,
+    wifi: true,
+    laundry: false,
+  };
+}
