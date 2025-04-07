@@ -20,6 +20,12 @@ Routing is the ability to navigate from one component in the application to anot
 
 The Angular Router enables users to declare routes and specify which component should be displayed on the screen if that route is requested by the application.
 
+The routerLink directive enables Angular's router to create dynamic links in the application. The value assigned to the routerLink is an array with two entries: the static portion of the path and the dynamic data.
+
+For the routerLink to work in the template, add a file level import of RouterLink and RouterOutlet from '@angular/router', then update the component imports array to include both RouterLink and RouterOutlet.
+
+ActivatedRoute router feature that enables you to have access to the data about the current route.
+
 # FirstApp
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.6.
