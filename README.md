@@ -1,3 +1,11 @@
+ng generate component home --inline-template --skip-tests
+
+Interfaces are custom data types for your app.
+
+ng generate interface housinglocation
+
+Inputs allow components to share data. The direction of the data sharing is from parent component to child component.
+
 # FirstApp
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.6.

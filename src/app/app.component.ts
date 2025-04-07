@@ -5,22 +5,7 @@ import { HomeComponent } from './home/home.component';
 @Component({
   selector: 'app-root',
   imports: [RouterOutlet, HomeComponent],
-  // templateUrl: './app.component.html',
-  template: `
-    <main>
-      <header class="brand-name">
-        <img
-          class="brand-logo"
-          src="/assets/cart.png"
-          alt="logo"
-          aria-hidden="true"
-        />
-      </header>
-      <section class="content">
-        <app-home></app-home>
-      </section>
-    </main>
-  `,
+  templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
 export class AppComponent {
