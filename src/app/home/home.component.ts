@@ -4,6 +4,7 @@ import { Housinglocation } from '../housinglocation';
 import { CommonModule } from '@angular/common';
 @Component({
   selector: 'app-home',
+  standalone: true,
   imports: [HousingLocationComponent, CommonModule],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',
