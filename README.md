@@ -16,6 +16,10 @@ Angular services provide a way for you to separate Angular app data and function
 
 Dependency injection is the mechanism that manages the dependencies of an app's components and the services that other components can use.
 
+Routing is the ability to navigate from one component in the application to another. In Single Page Applications (SPA), only parts of the page are updated to represent the requested view for the user.
+
+The Angular Router enables users to declare routes and specify which component should be displayed on the screen if that route is requested by the application.
+
 # FirstApp
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.6.

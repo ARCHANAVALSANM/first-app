@@ -1,4 +1,19 @@
 <main>
+  <a [routerLink]="['/']">
+    <header class="brand-name">
+      <img
+        class="brand-logo"
+        src="/assets/cart.png"
+        alt="logo"
+        aria-hidden="true"
+      />
+    </header>
+  </a>
+  <section class="content">
+    <router-outlet></router-outlet>
+  </section>
+</main>
+<!-- <main>
   <header class="brand-name">
     <img
       class="brand-logo"
@@ -10,4 +25,4 @@
   <section class="content">
     <app-home></app-home>
   </section>
-</main>
+</main> -->
