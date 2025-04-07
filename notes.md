@@ -29,3 +29,8 @@ ActivatedRoute router feature that enables you to have access to the data about 
 In Angular, FormGroup and FormControl are types that enable you to build forms. The FormControl type can provide a default value and shape the form data.
 
 The template now includes an event handler (submit)="submitApplication()". Angular uses parentheses syntax around the event name to define events in the template code.
+
+Template variables help you use data from one part of a template in another part of the template.
+In the template, you use the hash symbol, #, to declare a template variable.
+<input #phone placeholder="phone number" />
+<button type="button" (click)="callPhone(phone.value)">Call</button>
