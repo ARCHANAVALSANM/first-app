@@ -6,6 +6,12 @@ ng generate interface housinglocation
 
 Inputs allow components to share data. The direction of the data sharing is from parent component to child component.
 
+When adding a property binding to a component tag, we use the
+[attribute] = "value" syntax to notify Angular that the assigned value should
+be treated as a property from the component class and not a string value.
+
+if using ngfor import commonmodule
+
 # FirstApp
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.6.
