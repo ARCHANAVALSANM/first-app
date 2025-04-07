@@ -12,6 +12,10 @@ be treated as a property from the component class and not a string value.
 
 if using ngfor import commonmodule
 
+Angular services provide a way for you to separate Angular app data and functions that can be used by multiple components in your app. To be used by multiple components, a service must be made injectable. Services that are injectable and used by a component become dependencies of that component
+
+Dependency injection is the mechanism that manages the dependencies of an app's components and the services that other components can use.
+
 # FirstApp
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.6.
