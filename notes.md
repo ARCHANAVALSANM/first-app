@@ -25,3 +25,7 @@ The routerLink directive enables Angular's router to create dynamic links in the
 For the routerLink to work in the template, add a file level import of RouterLink and RouterOutlet from '@angular/router', then update the component imports array to include both RouterLink and RouterOutlet.
 
 ActivatedRoute router feature that enables you to have access to the data about the current route.
+
+In Angular, FormGroup and FormControl are types that enable you to build forms. The FormControl type can provide a default value and shape the form data.
+
+The template now includes an event handler (submit)="submitApplication()". Angular uses parentheses syntax around the event name to define events in the template code.
