@@ -30,14 +30,23 @@ export class DetailsComponent implements OnInit {
       this.applyForm.value.email ?? ''
     );
   }
-  housingLocationId = -1;
+  // housingLocationId = -1;
   housingLocation: Housinglocation | undefined;
 
+  // ngOnInit(): void {
+  //   this.housingLocationId = Number(this.route.snapshot.paramMap.get('id'));
+  //   this.housingLocation = this.housingService.getHousingLocationById(
+  //     this.housingLocationId
+  //   );
+  // }
+
   ngOnInit(): void {
-    this.housingLocationId = Number(this.route.snapshot.paramMap.get('id'));
-    this.housingLocation = this.housingService.getHousingLocationById(
-      this.housingLocationId
-    );
+    const housingLocationId = parseInt(this.route.snapshot.params['id'], 10);
+    this.housingService
+      .getHousingLocationById(housingLocationId)
+      .then((housingLocation) => {
+        this.housingLocation = housingLocation;
+      });
   }
 }
 

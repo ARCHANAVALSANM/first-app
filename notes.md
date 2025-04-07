@@ -34,3 +34,9 @@ Template variables help you use data from one part of a template in another part
 In the template, you use the hash symbol, #, to declare a template variable.
 <input #phone placeholder="phone number" />
 <button type="button" (click)="callPhone(phone.value)">Call</button>
+
+JSON Server is an open source tool used to create mock REST APIs.
+
+npm install -g json-server
+db.json
+json-server --watch db.json
